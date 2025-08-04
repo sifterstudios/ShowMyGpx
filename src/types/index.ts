@@ -22,17 +22,17 @@ export interface GPXData {
 
 export interface StreetViewImage {
   id: string;
-  url?: string; // Now optional - loaded on demand
+  url?: string;
   coordinates: {
     lat: number;
     lng: number;
   };
   heading?: number;
   pitch?: number;
-  distance: number; // Distance from start in meters
+  distance: number;
   loaded: boolean;
   error?: string;
-  isLoading?: boolean; // New loading state
+  isLoading?: boolean;
 }
 
 export interface ProcessingProgress {
